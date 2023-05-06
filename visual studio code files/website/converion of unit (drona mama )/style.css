@@ -1,0 +1,36 @@
+
+body{
+    background-color: burlywood;  
+}
+header {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box{
+    text-align: center ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+footer{
+    color: red;
+    font-size: 30px;
+    margin: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;    
+    right: 30%;
+    
+}
+button{
+    font-size: 20px;
+}
+@media screen and (max-width: 915px )
+{ 
+        
+    }
+
+    @media screen and (max-width: 441px){
+   
+ }
+ 

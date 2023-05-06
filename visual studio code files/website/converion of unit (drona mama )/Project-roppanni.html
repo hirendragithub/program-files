@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="feedback">
+        <div class="feedback-body">
+            <span class="ribbon"></span>
+            <form class="form">
+                <input type="number" name="squarefeet" id="squarefeet"  placeholder="Squarefeet" required>
+                <input type="number" id="ropani"  placeholder="Ropani" >
+                <input type="button" value="Convert" id="form-btn" onclick="calculate();" >
+            </form>
+        </div>
+    </div>
+    <script>
+        function calculate(){
+            var squarefeet = document.querySelector("#squarefeet");
+            var ropani = document.querySelector("#ropani");
+            var ropaniOutput;
+            if (squarefeet.value.includes(1)) {
+               ropani.value = squarefeet.value/5476;
+                console.log(ropani);
+            }
+            
+            else if (squarefeet.value.includes(2)) {
+               ropani.value = squarefeet.value/5476;
+            }
+            else if (squarefeet.value.includes(3)) {
+               ropani.value = squarefeet.value/5476;
+            }
+            else if (squarefeet.value.includes(4)) {
+               ropani.value = squarefeet.value/5476;
+            }
+            else if (squarefeet.value.includes(5)) {
+               ropani.value = squarefeet.value/5476;
+            }
+            else if (squarefeet.value.includes(6)) {
+               ropani.value = squarefeet.value/5476;
+            }
+            else if (squarefeet.value.includes(7)) {
+               ropani.value = squarefeet.value/5476;
+            }
+            else if (squarefeet.value.includes(8)) {
+               ropani.value = squarefeet.value/5476;
+            }
+            else if (squarefeet.value.includes(9)) {
+               ropani.value = squarefeet.value/5476;
+            }
+             else {
+                squarefeet.value = ropani.value*5476;
+                squarefeet.placeholder= squarefeet.value ;
+                squarefeet.value ='';
+            }
+
+            /*squarefeet = ropani.value*5476;
+            console.log(ropani);
+            console.log(squarefeet);*/
+        }
+    </script>
+</body>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(31, 8, 68);
+        }
+
+        .feedback{
+            width: 400px;
+            height: 530px;
+        }
+        
+        
+        .feedback-body{
+            background: #f8f8f8;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,.15);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ribbon{
+            width: 210px;
+            height:210px;
+            /* background-color: red; */
+            position: absolute;
+            display: inline-block;
+            top: -12px;
+            left:-12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .ribbon::before{
+            content: 'Convert squarefeet to ropani';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            /* letter-spacing: 3px; */
+            font-size: 15px;
+            width:150%;
+            height: 65px;
+            background: #62baea;
+            transform: rotate(-45deg) translateY(-31px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        }
+
+        .ribbon::after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background:#4481a0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            box-shadow: 195px -195px #4481a0 ;
+        }
+
+        form{
+            width: 60%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+            z-index: 1; 
+            margin-left: 60px;
+            margin-top: 40px;
+
+        }
+
+        form input {
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-bottom: 1px solid rgba(40, 29, 43,.7);
+            background: transparent;
+            margin: 10px 0;
+            padding-left: 10px;
+
+        }
+
+
+
+        #form-btn{
+            width: 200px;
+            height:50px;
+            background: linear-gradient( to right ,purple,pink);
+            border: none;
+            border-radius: 30px;
+            margin-top:30px ;
+            color: white;
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 3s;
+        }
+        #form-btn:hover{
+            background: linear-gradient( to right ,purple 40%,pink );
+            transform: translateY(3px);
+        }
+
+        input:hover{
+            border-bottom: 1px solid rgba(27, 37, 179, 0.815);
+
+        }
+       
+       
+</style>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion of area</title>
+    <meta name="robot"content="index,follow">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculation.js"></script>
+</head>
+<body>
+   <header>
+    <h1>area unit conversion</h1>
+   </header>
+   <div class="banner">
+    <div class="box">
+        <label for="ropani">squarefeet:</label><br>
+        <input type="number" id="squarefeet" name="squarefeet" placeholder="squarefeet"> <br> 
+             
+        <label for="squarefeet">value in ropani aana format:</label><br>
+       <input type="number" id="ropani"name="ropani">
+
+        <br>
+        <input type="button"id="button" value="submit" onclick="fun1();">
+         
+    
+    </div>
+</div>
+<script>
+
+    const squarefeet = document.getElementById('squarefeet');
+    const ropani,aana,daam,paisa ;
+
+    function fun1()
+   {
+
+     let r,remainder,remainder2,remainder3;
+
+     r=squarefeet/2;
+     remainder=squarefeet%5476;
+     aana=remainder/342.25;
+     remainder2=remainder%342.25;
+     paisa=remainder2/86.5625;
+     remainder3=remainder2%86.5625;
+     daam=remainder3/21.390625;
+    //  let a = r + aana + paisa + daam;
+
+    //  ropani.value=a;
+    console.log(r);
+}
+
+
+</script>
+</body>
+<footer style="text-align: center;">
+    this webiste is on test it may provide false output!!!
+</footer>
+</html>
